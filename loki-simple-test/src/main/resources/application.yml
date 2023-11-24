@@ -1,0 +1,8 @@
+server:
+  port: 8889
+logging:
+  level:
+    io.github.guoshiqiufeng.loki: debug
+
+loki:
+  global-config:
