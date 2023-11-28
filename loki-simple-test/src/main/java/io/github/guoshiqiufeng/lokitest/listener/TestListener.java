@@ -1,7 +1,7 @@
 package io.github.guoshiqiufeng.lokitest.listener;
 
 import io.github.guoshiqiufeng.loki.MessageContent;
-import io.github.guoshiqiufeng.loki.annotation.MessageListener;
+import io.github.guoshiqiufeng.loki.MessageListener;
 import io.github.guoshiqiufeng.lokitest.entity.TestEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
