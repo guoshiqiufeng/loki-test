@@ -1,0 +1,12 @@
+server:
+  port: 8889
+logging:
+  level:
+    io.github.guoshiqiufeng.loki: debug
+    io.github.guoshiqiufeng.lokitest: debug
+
+loki:
+  global-config:
+    mq-config:
+      mq-type: kafka
+      address: 127.0.0.1:9092

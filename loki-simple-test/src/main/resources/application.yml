@@ -3,15 +3,18 @@ server:
 logging:
   level:
     io.github.guoshiqiufeng.loki: debug
+    io.github.guoshiqiufeng.lokitest: debug
 
 loki:
   global-config:
     mq-config:
-      mq-type: ROCKET_MQ
-      address: 127.0.0.1:8081
-      auth: false
-      username: username
-      password: password
-      connect-timeout: 300
-      max-attempts: 5
+      mq-type: kafka
+      address: 127.0.0.1:9092
 
+#      mq-type: ROCKET_MQ
+#      address: 127.0.0.1:8081
+#      auth: false
+#      username: username
+#      password: password
+#      connect-timeout: 300
+#      max-attempts: 5
