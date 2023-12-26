@@ -17,6 +17,7 @@
         <module>loki-simple-test</module>
         <module>loki-rocketmq-test</module>
         <module>loki-kafka-test</module>
+        <module>loki-redis-test</module>
     </modules>
 
 </project>

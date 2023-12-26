@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.guoshiqiufeng</groupId>
-    <artifactId>loki-rocketmq-test</artifactId>
+    <artifactId>loki-redis-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>loki-rocketmq-test</name>
-    <description>loki-rocketmq-test</description>
+    <name>loki-redis-test</name>
+    <description>loki-redis-test</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>io.github.guoshiqiufeng</groupId>
-            <artifactId>loki-spring-boot-starter-rocketmq</artifactId>
+            <artifactId>loki-spring-boot-starter-redis</artifactId>
             <version>0.4.0</version>
         </dependency>
         <dependency>

@@ -5,11 +5,18 @@ logging:
     io.github.guoshiqiufeng.loki: debug
     io.github.guoshiqiufeng.lokitest: debug
 
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 12
+
 loki:
   global-config:
     mq-config:
-      mq-type: kafka
-      address: 127.0.0.1:9092
+      mq-type: redis
+      address: 127.0.0.1:6379
 
 #      mq-type: ROCKET_MQ
 #      address: 127.0.0.1:8081
