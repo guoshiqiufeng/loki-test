@@ -5,6 +5,15 @@ logging:
     io.github.guoshiqiufeng.loki: debug
     io.github.guoshiqiufeng.lokitest: debug
 
+spring:
+  kafka:
+    consumer:
+      auto:
+        offset:
+          reset: earliest
+      auto-commit-interval: 1000
+      enable-auto-commit: true
+
 loki:
   global-config:
     mq-config:
