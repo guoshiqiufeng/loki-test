@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 public class TestListener implements Listener<TestEntity> {
     @Override
     public void onMessage(MessageContent<TestEntity> entity) {
-        log.info("entity:{}", entity);
+        log.info("TestListener entity:{}", entity);
     }
 }
