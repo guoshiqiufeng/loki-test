@@ -19,7 +19,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <loki.version>0.6.1</loki.version>
+        <loki.version>0.7.0-SNAPSHOT</loki.version>
     </properties>
 
     <dependencyManagement>
@@ -36,6 +36,7 @@
 
     <modules>
         <module>loki-simple-test</module>
+        <module>loki-rocketmq-remoting-test</module>
         <module>loki-rocketmq-test</module>
         <module>loki-kafka-test</module>
         <module>loki-redis-test</module>

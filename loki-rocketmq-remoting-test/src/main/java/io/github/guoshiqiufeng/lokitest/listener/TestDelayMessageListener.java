@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @MessageListener(topic = "lokiDelay")
 @Component
-public class TestMessageListener implements Listener<String> {
+public class TestDelayMessageListener implements Listener<String> {
     @Override
     public void onMessage(MessageContent<String> entity) {
-        log.info("TestMessageListener entity:{}", entity);
+        log.info("entity:{}", entity);
     }
 }
