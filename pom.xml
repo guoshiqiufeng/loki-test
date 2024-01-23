@@ -19,7 +19,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <loki.version>0.7.0-SNAPSHOT</loki.version>
+        <loki.version>0.7.0</loki.version>
     </properties>
 
     <dependencyManagement>
