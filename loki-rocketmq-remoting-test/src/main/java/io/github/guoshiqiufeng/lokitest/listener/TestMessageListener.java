@@ -7,11 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@MessageListener(topic = "lokiDelay")
+@MessageListener(topic = "loki")
 @Component
 public class TestMessageListener implements Listener<String> {
     @Override
     public void onMessage(MessageContent<String> entity) {
-        log.info("TestMessageListener entity:{}", entity);
+        log.info("entity:{}", entity);
     }
 }

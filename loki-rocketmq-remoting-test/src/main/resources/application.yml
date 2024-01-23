@@ -1,0 +1,18 @@
+server:
+  port: 8889
+logging:
+  level:
+    io.github.guoshiqiufeng.loki: debug
+    io.github.guoshiqiufeng.lokitest: debug
+
+rocketmq:
+  producer:
+    group: loki-group
+
+loki:
+  global-config:
+    mq-config:
+      mq-type: rocket_mq_remoting
+      address: 127.0.0.1:9876
+      connect-timeout: 300
+      max-attempts: 5

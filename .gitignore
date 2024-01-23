@@ -44,3 +44,5 @@ bin/
 
 ### Gradle ###
 .gradle
+
+/**/target/
