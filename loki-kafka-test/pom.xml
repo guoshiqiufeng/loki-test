@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.guoshiqiufeng</groupId>
     <artifactId>loki-kafka-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>loki-kafka-test</name>
     <description>loki-kafka-test</description>
     <properties>
