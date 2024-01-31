@@ -2,18 +2,15 @@ package io.github.guoshiqiufeng.lokitest.controller;
 
 import cn.hutool.core.util.IdUtil;
 import com.alibaba.fastjson.JSON;
-import io.github.guoshiqiufeng.loki.support.core.LokiClient;
-import io.github.guoshiqiufeng.loki.support.core.ProducerRecord;
-import io.github.guoshiqiufeng.loki.support.core.ProducerResult;
-import io.github.guoshiqiufeng.loki.support.kafka.KafkaClient;
+import io.github.guoshiqiufeng.loki.support.core.producer.ProducerRecord;
+import io.github.guoshiqiufeng.loki.support.core.producer.ProducerResult;
 import io.github.guoshiqiufeng.loki.support.redis.RedisClient;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import jakarta.annotation.Resource;
 import java.util.concurrent.ExecutionException;
 
 /**

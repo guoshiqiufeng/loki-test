@@ -17,7 +17,7 @@ loki:
     mq-config:
       mq-type: redis
       address: 127.0.0.1:6379
-      auth: true
+      auth: false
       password: 123456
 #      mq-type: ROCKET_MQ
 #      address: 127.0.0.1:8081
