@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import io.github.guoshiqiufeng.loki.support.rocketmq.RocketClient;
 import io.github.guoshiqiufeng.lokitest.entity.TestEntity;
 import io.github.guoshiqiufeng.lokitest.mapper.TestMapper;
 import jakarta.annotation.Resource;

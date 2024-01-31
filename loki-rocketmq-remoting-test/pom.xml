@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.guoshiqiufeng</groupId>
     <artifactId>loki-rocketmq-remoting-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>loki-rocketmq-remoting-test</name>
     <description>loki-rocketmq-remoting-test</description>
     <properties>
