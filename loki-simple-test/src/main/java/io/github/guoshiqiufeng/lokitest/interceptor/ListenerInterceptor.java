@@ -23,7 +23,7 @@ public class ListenerInterceptor implements PipelineProcess<ConsumerRecordModel>
      */
     @Override
     public boolean support(PipelineContext<ConsumerRecordModel> context) {
-        return "loki".equals(context.getProcessModel().getTopic());
+        return "loki".equals(context.getModel().getTopic());
     }
 
     /**

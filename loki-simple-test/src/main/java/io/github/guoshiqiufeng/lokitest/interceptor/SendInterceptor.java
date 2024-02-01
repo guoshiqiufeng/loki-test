@@ -23,7 +23,7 @@ public class SendInterceptor implements PipelineProcess<ProducerRecordModel> {
      */
     @Override
     public boolean support(PipelineContext<ProducerRecordModel> context) {
-        return "loki".equals(context.getProcessModel().getTopic());
+        return "loki".equals(context.getModel().getTopic());
     }
 
     /**
