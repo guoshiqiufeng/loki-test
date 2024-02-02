@@ -17,8 +17,7 @@ jobs:
         with:
           repositories: 'https://maven.aliyun.com/repository/public'
           dependenciesJson: '[
-          {"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-bom", "version":"0.8.1"}
-          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter", "version":"0.8.1"}
+          {"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter", "version":"0.8.1"}
           ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-kafka", "version":"0.8.1"}
           ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-redis", "version":"0.8.1"}
           ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-rocketmq-remoting", "version":"0.8.1"}
