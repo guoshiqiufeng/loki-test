@@ -1,0 +1,26 @@
+name: "Sync Maven"
+on:
+  push:
+    branches:
+      - main
+  # 手动触发部署
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.9.5
+      - uses: guoshiqiufeng/github-action-sync-maven@v1
+        with:
+          repositories: 'https://maven.aliyun.com/repository/public'
+          dependenciesJson: '[
+          {"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-bom", "version":"0.8.1"}
+          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter", "version":"0.8.1"}
+          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-kafka", "version":"0.8.1"}
+          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-redis", "version":"0.8.1"}
+          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-rocketmq-remoting", "version":"0.8.1"}
+          ,{"groupId":"io.github.guoshiqiufeng", "artifactId":"loki-spring-boot-starter-rocketmq", "version":"0.8.1"}
+          ]'
