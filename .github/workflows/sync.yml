@@ -2,7 +2,7 @@ name: "Sync Maven"
 on:
   push:
     branches:
-      - main
+      - main-d
   # 手动触发部署
   workflow_dispatch:
 jobs:
