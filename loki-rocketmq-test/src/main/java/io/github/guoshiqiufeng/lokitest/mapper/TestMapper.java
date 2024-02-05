@@ -22,7 +22,7 @@ public interface TestMapper extends BaseMapper<TestEntity> {
     @SendMessage(topic = "loki", tag = "custom", async = true, message = "#entity.message", messageKey = "#entity.id")
     CompletableFuture<String> customAsyncSend(TestEntity entity);
 
-    @SendMessage(topic = "lokiDelay", tag = "custom", message = "#entity.message", deliveryTimestamp = 20 * 1000,messageKey = "#entity.id")
+    @SendMessage(topic = "lokiDelay", tag = "custom", message = "#entity.message", deliveryTimestamp = 20 * 1000, messageKey = "#entity.id")
     void deliverySend(TestEntity entity);
 
 }

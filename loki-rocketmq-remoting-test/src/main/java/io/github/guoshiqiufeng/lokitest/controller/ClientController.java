@@ -2,8 +2,8 @@ package io.github.guoshiqiufeng.lokitest.controller;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.json.JSONUtil;
-import io.github.guoshiqiufeng.loki.support.core.ProducerRecord;
-import io.github.guoshiqiufeng.loki.support.core.ProducerResult;
+import io.github.guoshiqiufeng.loki.support.core.producer.ProducerRecord;
+import io.github.guoshiqiufeng.loki.support.core.producer.ProducerResult;
 import io.github.guoshiqiufeng.loki.support.rocketmq.remoting.RocketRemotingClient;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
