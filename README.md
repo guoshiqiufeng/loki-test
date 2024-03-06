@@ -5,7 +5,7 @@
 - [loki-simple-test](loki-simple-test)
   基于spring 3.2 简单测试
 - [loki-kafka-test](loki-kafka-test)
-  kafka测试，支持kafka3.x
+  kafka测试，支持kafka2.x 以上
 - [loki-redis-test](loki-redis-test)
   redis测试，支持redis5以上版本
 - [loki-rocketmq-remoting-test](loki-rocketmq-remoting-test)
