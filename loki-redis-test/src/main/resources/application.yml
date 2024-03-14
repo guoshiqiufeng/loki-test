@@ -6,22 +6,5 @@ logging:
     io.github.guoshiqiufeng.lokitest: debug
 
 spring:
-  data:
-    redis:
-      sentinel:
-        master: mymaster
-        nodes:
-          - 127.0.0.1:26380
-          - 127.0.0.1:26379
-          - 127.0.0.1:26381
-        password: 123456
-      password: 123456
-      database: 12
-
-loki:
-  global-config:
-    mq-config:
-      mq-type: redis
-      address: mymaster,127.0.0.1:26380,127.0.0.1:26379,127.0.0.1:26381
-      auth: true
-      password: 123456
+  profiles:
+    active: single

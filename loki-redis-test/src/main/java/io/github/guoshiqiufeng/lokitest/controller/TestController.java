@@ -55,6 +55,16 @@ public class TestController {
         return "success";
     }
 
+    @GetMapping("customSend3")
+    public String customSend3() {
+        TestEntity entity = new TestEntity();
+        entity.setId("9521");
+        entity.setMessage("test");
+        String messageId = testMapper.customSend3(entity);
+        log.debug("send messageId:{}", messageId);
+        return "success";
+    }
+
     @GetMapping("customAsyncSend")
     public String customAsyncSend() throws ExecutionException, InterruptedException {
         TestEntity entity = new TestEntity();

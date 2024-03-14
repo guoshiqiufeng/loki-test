@@ -1,0 +1,15 @@
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      #password: 123456
+      database: 12
+
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis
+      address: 127.0.0.1:6379
+      auth: false
+      password: 123456
+    redis-history-delay-message-send: true
