@@ -8,3 +8,6 @@ logging:
 spring:
   profiles:
     active: single
+#loki:
+#  redis:
+#    support-type: spring_data
